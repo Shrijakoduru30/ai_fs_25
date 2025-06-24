@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            
+   
+            .container{
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                grid-template-rows: 100px 1fr;
+                display: grid;
+            }
+            .header{
+                width:100%;
+                background-color:yellowgreen ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                border-radius: 26px;
+                font-size:30px;
+                text-shadow: 3px 3px 3px blanchedalmond;
+                flex-direction:row;
+                box-shadow: 4px 4px 4px;
+                 font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
+                
+                }
+          .box1{
+            width:100%;
+                background-color:yellowgreen ;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                flex-direction:column;
+                }
+        .box2{
+                width:100%;
+                background-color:yellowgreen ;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                flex-direction:column;
+                }
+        .box3{
+                    width:100%;
+                background-color:yellowgreen ;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                flex-direction:column;
+                }
+            .main{
+                background-color: blue;
+                display: grid;
+                grid-template-columns: 200px 1fr;
+            }
+            .sidebar{
+                background-color: pink;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap:40px;
+                font-size:30px;
+                flex-wrap: wrap;
+                
+            }
+            @media(min-width: 1280px){
+                .sidebar{
+                    flex: 1 1 calc(25% - 20px);
+                    display: flex;
+                }
+            }
+            .content{
+                background-color: orangered;
+                display:grid;
+                grid-template-rows: 1fr 100px;
+                font-size: 50px;
+              
+            }
+            .data{
+                background-color: violet;
+                display: flex;
+                justify-content: center;
+                font-size: 20px;
+            }
+            .footer{
+                background-color: yellow;
+                font-size:40px;
+                display: flex;
+               justify-content: center;
+               align-items: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+             <div class="box1"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" width="30px" height="30px">
+            <a href="home.html">Home</a></div>
+              <div class="box2"><img src="https://cdn-icons-png.flaticon.com/512/15/15659.png" width="30px" height="30px">  
+           <a href="about-us">About-us</a></div>
+           <div class="box3"><img src="https://cdn-icons-png.flaticon.com/512/7269/7269995.png" width="30px" height="30px">   
+             <div><a href="contact-us">Contact-us</a></div>
+            </div>
+            </div>
+            <div class="main">
+                <div class="sidebar">
+                    <a href="form.html">Form</a>
+                    <a href="report.html">Report</a>
+                </div>
+                
+
+                <div class="content">
+                    <div class="data">sidebar
+                    </div>
+                    <div class="footer">footer</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
